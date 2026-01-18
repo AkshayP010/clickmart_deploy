@@ -11,5 +11,5 @@ class ProductListView(generics.ListAPIView):
 class ProductDetailView(generics.RetrieveAPIView):
     queryset= Product.objects.filter(is_active=True)
     serializer_class= ProductSerializers
-    
+
     
