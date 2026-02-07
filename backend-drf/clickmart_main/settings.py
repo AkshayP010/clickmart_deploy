@@ -123,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
+# Internationalization  
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
 LANGUAGE_CODE = "en-us"
@@ -161,6 +161,9 @@ SIMPLE_JWT = {
     "REFERESH_TOKEN_LIFETIME": timedelta(days=7)
         
 }
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 
 CORS_ALLOWED_ORIGINS = [
